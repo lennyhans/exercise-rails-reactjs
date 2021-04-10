@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'products', to: 'products#get'
+  post 'products', to: 'products#post'
+  put 'products/put'
+  get 'products/delete'
   post 'login', to: 'account#login'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
